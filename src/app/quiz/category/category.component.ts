@@ -10,6 +10,9 @@ import { AuthService } from 'src/app/auth/auth.service';
   standalone: false
 })
 export class CategoryComponent implements OnInit {
+  allCategories: any[] = [];
+  search = '';
+  submitted = false;
   allCategories = this.categoryService.categoryContent;
   playerName: string = '';
 
@@ -29,4 +32,9 @@ export class CategoryComponent implements OnInit {
   goToCategory(categoryId: number) {
     this.router.navigate(['/quiz', this.playerName], { queryParams: { categoryId } });
   }
+
+  submit() {
+    this.submitted = true;
+  }
+
 }

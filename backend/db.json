@@ -2,37 +2,37 @@
   "categories": [
     {
       "id": 1,
-      "label": "Templates & Data Binding",
+      "label": "Templates",
       "description": "Interpolation, property/event binding, pipes, etc."
     },
     {
       "id": 2,
-      "label": "Composants & Communication",
+      "label": "Composants",
       "description": "Composants, @Input/@Output, interaction parent-enfant."
     },
     {
       "id": 3,
-      "label": "Routage & Navigation",
+      "label": "Routage",
       "description": "Router, configuration des routes, lazy loading."
     },
     {
       "id": 4,
-      "label": "Services & DI",
+      "label": "Services",
       "description": "Services, injection de dépendances."
     },
     {
       "id": 5,
-      "label": "CLI & Outils",
+      "label": "CLI",
       "description": "Angular CLI et outillage."
     },
     {
       "id": 6,
-      "label": "Modules & Architecture",
+      "label": "Modules",
       "description": "NgModule, organisation et architecture."
     },
     {
       "id": 7,
-      "label": "HTTP & RxJS",
+      "label": "HTTP",
       "description": "HttpClient, Observables et RxJS."
     }
   ],
