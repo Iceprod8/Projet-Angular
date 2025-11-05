@@ -2,6 +2,7 @@
     <section class="category_container" *ngFor="let category of allCategories">
         <div class="">
             <h4 class="category_label">{{ category?.label }}</h4>
+            <button (click)="goToCategory(category.id)">Choisir</button>
         </div>
     </section>
 </section>
