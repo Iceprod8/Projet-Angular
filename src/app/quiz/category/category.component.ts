@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoryService } from 'src/app/shared/services/category.service';
 
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
-  styleUrl: './category.component.scss',
+  styleUrls: ['./category.component.scss'],
   standalone: false
 })
-export class CategoryComponent {
-  allCategories = this.categoryService.categoryContent;
+export class CategoryComponent implements OnInit {
+  allCategories: any[] = [];
   
   constructor(
     private categoryService: CategoryService,
@@ -18,7 +18,8 @@ export class CategoryComponent {
   ) { }
 
   ngOnInit(): void {
-    this.categoryService.getCategoryContent();
+    this.categoryService.getCategoryContent().subscribe((categories) => {
+      this.allCategories = categories;
+    });
   }
-
 }
