@@ -136,6 +136,156 @@
       "id": 20,
       "questionLabel": "Explain the concept of lazy loading in Angular and when it's beneficial.",
       "categoryId": 3
+    },
+    {
+      "id": 21,
+      "questionLabel": "What does the async pipe do in Angular?",
+      "categoryId": 1
+    },
+    {
+      "id": 22,
+      "questionLabel": "How do you bind a CSS class conditionally in a template?",
+      "categoryId": 1
+    },
+    {
+      "id": 23,
+      "questionLabel": "What is a template reference variable and how is it declared?",
+      "categoryId": 1
+    },
+    {
+      "id": 24,
+      "questionLabel": "What is ngModel used for in template-driven forms?",
+      "categoryId": 1
+    },
+    {
+      "id": 25,
+      "questionLabel": "How can a child component send data to a parent component?",
+      "categoryId": 2
+    },
+    {
+      "id": 26,
+      "questionLabel": "Which decorator lets a child component receive data from its parent?",
+      "categoryId": 2
+    },
+    {
+      "id": 27,
+      "questionLabel": "What is the purpose of @ViewChild?",
+      "categoryId": 2
+    },
+    {
+      "id": 28,
+      "questionLabel": "What is content projection and which tag is used?",
+      "categoryId": 2
+    },
+    {
+      "id": 29,
+      "questionLabel": "How do you define child routes in Angular?",
+      "categoryId": 3
+    },
+    {
+      "id": 30,
+      "questionLabel": "What does the routerLinkActive directive do?",
+      "categoryId": 3
+    },
+    {
+      "id": 31,
+      "questionLabel": "What is a CanActivate guard used for?",
+      "categoryId": 3
+    },
+    {
+      "id": 32,
+      "questionLabel": "How do you pass and read route parameters in Angular?",
+      "categoryId": 3
+    },
+    {
+      "id": 33,
+      "questionLabel": "What does providedIn: 'root' mean for a service?",
+      "categoryId": 4
+    },
+    {
+      "id": 34,
+      "questionLabel": "What is an InjectionToken used for?",
+      "categoryId": 4
+    },
+    {
+      "id": 35,
+      "questionLabel": "Difference between providing a service in 'root' vs in a module's providers?",
+      "categoryId": 4
+    },
+    {
+      "id": 36,
+      "questionLabel": "Which CLI command generates a service?",
+      "categoryId": 5
+    },
+    {
+      "id": 37,
+      "questionLabel": "What does 'ng g module feature --routing' create?",
+      "categoryId": 5
+    },
+    {
+      "id": 38,
+      "questionLabel": "Which command builds an Angular app for production?",
+      "categoryId": 5
+    },
+    {
+      "id": 39,
+      "questionLabel": "What is a feature module used for?",
+      "categoryId": 6
+    },
+    {
+      "id": 40,
+      "questionLabel": "What is the purpose of a SharedModule?",
+      "categoryId": 6
+    },
+    {
+      "id": 41,
+      "questionLabel": "What are forRoot and forChild used for (e.g., in RouterModule)?",
+      "categoryId": 6
+    },
+    {
+      "id": 42,
+      "questionLabel": "What does an HttpInterceptor do?",
+      "categoryId": 7
+    },
+    {
+      "id": 43,
+      "questionLabel": "How do you perform a GET request with HttpClient?",
+      "categoryId": 7
+    },
+    {
+      "id": 44,
+      "questionLabel": "How does an Observable differ from a Promise?",
+      "categoryId": 7
+    },
+    {
+      "id": 45,
+      "questionLabel": "How do you handle HTTP errors with HttpClient?",
+      "categoryId": 7
+    },
+    {
+      "id": 46,
+      "questionLabel": "What is the difference between Subject and BehaviorSubject?",
+      "categoryId": 7
+    },
+    {
+      "id": 47,
+      "questionLabel": "What is a structural directive and how is it applied?",
+      "categoryId": 1
+    },
+    {
+      "id": 48,
+      "questionLabel": "What effect does ChangeDetectionStrategy.OnPush have?",
+      "categoryId": 2
+    },
+    {
+      "id": 49,
+      "questionLabel": "How do you configure a lazy-loaded route (modern syntax)?",
+      "categoryId": 3
+    },
+    {
+      "id": 50,
+      "questionLabel": "How do you send custom HTTP headers with HttpClient?",
+      "categoryId": 7
     }
   ],
   "answers": [
@@ -537,6 +687,606 @@
     {
       "questionId": 20,
       "answerLabel": "Lazy loading in Angular is a technique for defining routes.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "It subscribes to an Observable/Promise and returns the latest value, handling unsubscribe automatically.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "It converts Observables into Promises globally.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "It triggers change detection manually on the component.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 21,
+      "answerLabel": "It creates a new subscription service instance.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "Use [ngClass] or [class.className] bindings with a boolean condition.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "Use the style tag with an if statement in HTML.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "Only possible using a custom directive.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 22,
+      "answerLabel": "It cannot be done in Angular templates.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "A variable declared with # in the template to reference an element or directive instance.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "A special variable created in the component class using @Input.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "A service used to share data between components.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 23,
+      "answerLabel": "A CSS selector used by Angular to style elements.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "Two-way data binding for form fields in template-driven forms (requires FormsModule and a name attribute).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "It is only used to style input elements.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "It disables the form control validation.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 24,
+      "answerLabel": "It is used to generate reactive form controls automatically.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "Using @Output with EventEmitter in the child and handling the event in the parent.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "Only by calling a parent public method directly from the template.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "By editing the parent's private fields from the child.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 25,
+      "answerLabel": "It is not possible to send data to a parent component.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "@Input",
+      "isCorrect": true
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "@Output",
+      "isCorrect": false
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "@Injectable",
+      "isCorrect": false
+    },
+    {
+      "questionId": 26,
+      "answerLabel": "@Directive",
+      "isCorrect": false
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "To get a reference to a template element or child component instance inside the component class.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "To declare inputs for a component.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "To intercept HTTP calls globally.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 27,
+      "answerLabel": "To configure router navigation extras.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "Projecting content from a parent into a child using the <ng-content> tag.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "Adding styles to a child from a parent using ::ng-deep.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "Loading components dynamically with ViewContainerRef.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 28,
+      "answerLabel": "Sharing state between routes with a resolver.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "By adding a children array to a route configuration.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "By creating a second RouterModule.forRoot() call.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "By placing multiple router-outlet elements in index.html only.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 29,
+      "answerLabel": "By using a custom directive on router-outlet.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "Applies a CSS class when the associated link's route becomes active.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "Disables navigation for the link when clicked.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "Performs a redirect automatically to the first child route.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 30,
+      "answerLabel": "Loads the component lazily when hovered.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 31,
+      "answerLabel": "To decide if a route can be activated (navigation allowed).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 31,
+      "answerLabel": "To pre-load assets before application bootstrap.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 31,
+      "answerLabel": "To transform HTTP responses globally.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 31,
+      "answerLabel": "To generate routes using the CLI.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 32,
+      "answerLabel": "Define routes with :param and read via ActivatedRoute (params/snapshot).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 32,
+      "answerLabel": "Only query strings are supported for passing data to routes.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 32,
+      "answerLabel": "Use a global service to share data instead of params.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 32,
+      "answerLabel": "Pass parameters by editing window.location.hash manually.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 33,
+      "answerLabel": "Registers the service in the root injector (single app-wide instance, tree-shakable).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 33,
+      "answerLabel": "Prevents the service from being injected in lazy modules.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 33,
+      "answerLabel": "Creates a new instance for each component injection site.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 33,
+      "answerLabel": "Disables Angular's dependency injection for the service.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 34,
+      "answerLabel": "To provide a token for DI when a type is not available (e.g., interfaces, config values).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 34,
+      "answerLabel": "To declare a new component selector at runtime.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 34,
+      "answerLabel": "To intercept and modify route parameters.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 34,
+      "answerLabel": "To style components using tokens in CSS.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 35,
+      "answerLabel": "'root' is tree-shakable app-wide singleton; module providers can create distinct instances per (lazy) module.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 35,
+      "answerLabel": "Both options always create a new instance per component.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 35,
+      "answerLabel": "Providing in a module makes the service unavailable in child modules.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 35,
+      "answerLabel": "Providing in 'root' disables lazy loading for routes.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 36,
+      "answerLabel": "ng generate service my-service (alias: ng g s my-service)",
+      "isCorrect": true
+    },
+    {
+      "questionId": 36,
+      "answerLabel": "ng create service my-service",
+      "isCorrect": false
+    },
+    {
+      "questionId": 36,
+      "answerLabel": "ng make service my-service",
+      "isCorrect": false
+    },
+    {
+      "questionId": 36,
+      "answerLabel": "ng generate module my-service",
+      "isCorrect": false
+    },
+    {
+      "questionId": 37,
+      "answerLabel": "A module file and a routing module preconfigured for feature routes (using forChild).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 37,
+      "answerLabel": "Only a routing module with forRoot configuration.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 37,
+      "answerLabel": "A service and a component.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 37,
+      "answerLabel": "A lazy-loaded route automatically registered in app-routing.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 38,
+      "answerLabel": "ng build --configuration production (alias: -c production)",
+      "isCorrect": true
+    },
+    {
+      "questionId": 38,
+      "answerLabel": "ng serve --prod",
+      "isCorrect": false
+    },
+    {
+      "questionId": 38,
+      "answerLabel": "ng start --production",
+      "isCorrect": false
+    },
+    {
+      "questionId": 38,
+      "answerLabel": "ng compile --prod",
+      "isCorrect": false
+    },
+    {
+      "questionId": 39,
+      "answerLabel": "To group related functionality (components, routes, services) into a cohesive area of the app.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 39,
+      "answerLabel": "To hold only global styles for the application.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 39,
+      "answerLabel": "To replace the root AppModule.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 39,
+      "answerLabel": "To manage environment variables.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 40,
+      "answerLabel": "To declare and export commonly used components/pipes/directives for reuse across modules.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 40,
+      "answerLabel": "To configure the global HTTP interceptors.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 40,
+      "answerLabel": "To bootstrap the Angular application.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 40,
+      "answerLabel": "To declare providers for every feature service.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 41,
+      "answerLabel": "forRoot configures providers and should be called once in root; forChild is for feature modules.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 41,
+      "answerLabel": "Both are deprecated and should not be used anywhere.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 41,
+      "answerLabel": "forChild must be used in AppModule only.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 41,
+      "answerLabel": "forRoot should be called in every lazy module.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 42,
+      "answerLabel": "Intercepts HTTP requests/responses to read/modify or add headers, handle errors, etc.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 42,
+      "answerLabel": "Generates Angular services automatically from responses.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 42,
+      "answerLabel": "Provides built-in authentication without configuration.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 42,
+      "answerLabel": "Converts Observables into Promises for all requests.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 43,
+      "answerLabel": "this.http.get<T>(url) and subscribe to the Observable.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 43,
+      "answerLabel": "this.http.request('FETCH', url)",
+      "isCorrect": false
+    },
+    {
+      "questionId": 43,
+      "answerLabel": "this.http.fetch(url).toPromise()",
+      "isCorrect": false
+    },
+    {
+      "questionId": 43,
+      "answerLabel": "window.fetch(url).subscribe()",
+      "isCorrect": false
+    },
+    {
+      "questionId": 44,
+      "answerLabel": "Observables are lazy, can emit multiple values and be canceled; Promises are eager and emit a single value.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 44,
+      "answerLabel": "Observables always resolve faster than Promises in Angular.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 44,
+      "answerLabel": "Promises are lazy and emit multiple values; Observables are eager and single-shot.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 44,
+      "answerLabel": "They are identical in behavior and performance.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 45,
+      "answerLabel": "Use RxJS catchError with HttpErrorResponse handling (and possibly retry), or subscribe error callback.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 45,
+      "answerLabel": "Wrap the request in try/catch without using Observables.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 45,
+      "answerLabel": "Errors are auto-handled by Angular; no code is needed.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 45,
+      "answerLabel": "Only use global error handlers in index.html.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 46,
+      "answerLabel": "BehaviorSubject stores the latest value and emits it immediately to new subscribers; Subject does not store a current value.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 46,
+      "answerLabel": "Subject stores the latest value; BehaviorSubject does not.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 46,
+      "answerLabel": "Both are identical in behavior.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 46,
+      "answerLabel": "BehaviorSubject cannot be subscribed to after it's created.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 47,
+      "answerLabel": "A directive that changes DOM structure, applied with * syntax (e.g., *ngIf, *ngFor).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 47,
+      "answerLabel": "A directive used only for styling without changing DOM.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 47,
+      "answerLabel": "A special component that cannot have inputs.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 47,
+      "answerLabel": "A router-only directive to navigate between pages.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 48,
+      "answerLabel": "It limits change detection to input reference changes, events, and async updates; improves performance.",
+      "isCorrect": true
+    },
+    {
+      "questionId": 48,
+      "answerLabel": "It disables change detection entirely for the component.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 48,
+      "answerLabel": "It forces change detection to run twice as often.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 48,
+      "answerLabel": "It enables server-side rendering for the component.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 49,
+      "answerLabel": "Use loadChildren with a dynamic import: loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule)",
+      "isCorrect": true
+    },
+    {
+      "questionId": 49,
+      "answerLabel": "Add multiple RouterModule.forRoot() calls in every module.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 49,
+      "answerLabel": "Use routerLink with a lazy attribute on the template.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 49,
+      "answerLabel": "Only possible using third-party libraries.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 50,
+      "answerLabel": "Pass HttpHeaders in the options object: this.http.get(url, { headers: new HttpHeaders({ ... }) }).",
+      "isCorrect": true
+    },
+    {
+      "questionId": 50,
+      "answerLabel": "Set window.headers before calling HttpClient methods.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 50,
+      "answerLabel": "Headers cannot be sent with HttpClient.",
+      "isCorrect": false
+    },
+    {
+      "questionId": 50,
+      "answerLabel": "Add headers by editing angular.json build options only.",
       "isCorrect": false
     }
   ],
