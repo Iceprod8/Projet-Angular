@@ -17,7 +17,7 @@ const routes: Routes = [
     component : QuizComponent
   },
   {
-    path: 'category',
+    path: 'category/:playerName',
     component : CategoryComponent
   },
   {

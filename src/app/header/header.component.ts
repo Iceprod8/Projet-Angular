@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AuthService } from "../auth/auth.service";
 
 @Component({
@@ -8,6 +8,7 @@ import { AuthService } from "../auth/auth.service";
   standalone: false
 })
 export class HeaderComponent {
+  @Input() username: string = '';
 
   constructor(private authService: AuthService) { }
 
@@ -20,6 +21,6 @@ export class HeaderComponent {
   }
 
   get getUsername() {
-    return this.authService.user?.username || '';
+    return this.username || this.authService.user?.username || '';
   }
 }
