@@ -10,11 +10,10 @@ import { AuthService } from 'src/app/auth/auth.service';
   standalone: false
 })
 export class CategoryComponent implements OnInit {
-  allCategories: any[] = [];
-  search = '';
-  submitted = false;
   allCategories = this.categoryService.categoryContent;
   playerName: string = '';
+  search = '';
+  submitted = false;
 
   constructor(
     private categoryService: CategoryService,
@@ -35,6 +34,16 @@ export class CategoryComponent implements OnInit {
 
   submit() {
     this.submitted = true;
+  }
+
+  get filteredCategories() {
+    const term = this.search?.trim().toLowerCase();
+    if (!this.submitted || !term) {
+      return this.allCategories;
+    }
+    return this.allCategories.filter((c: any) =>
+      (c?.label || '').toLowerCase().includes(term)
+    );
   }
 
 }
