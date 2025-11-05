@@ -1,7 +1,15 @@
 <section>
-    <section class="category_container" *ngFor="let category of allCategories">
-        <div class="">
-            <h4 class="category_label">{{ category?.label }}</h4>
+    <section>
+        <form #searchForm="ngForm" (ngSubmit)="submit()">
+            <input type="text" id="search" [(ngModel)]="search" name="search" required>
+            <button class="btn --icon" type="submit" [disabled]="!searchForm.form.valid">Submit</button>
+        </form>
+    </section>
+    <section class="flex flex-wrap gap-2"> <section class="category_container flex flex-row gap-2" *ngFor="let category of allCategories">
+        <div>
+            <div class="flex w-48 h-48 bg-slate-300 justify-center items-center">
+                <h4 class="category_label text-lg">{{ category?.label }}</h4>
+            </div>
         </div>
     </section>
 </section>

@@ -10,7 +10,9 @@ import { CategoryService } from 'src/app/shared/services/category.service';
 })
 export class CategoryComponent implements OnInit {
   allCategories: any[] = [];
-  
+  search = '';
+  submitted = false;
+
   constructor(
     private categoryService: CategoryService,
     private router: Router,
@@ -22,4 +24,9 @@ export class CategoryComponent implements OnInit {
       this.allCategories = categories;
     });
   }
+
+  submit() {
+    this.submitted = true;
+  }
+
 }
